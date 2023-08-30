@@ -48,3 +48,10 @@ body {
 .navbar a.active {
   color: #ae0001;
 }
+
+.main {
+    min-height: 100vh;
+    background: url("../images/background_img.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+}
