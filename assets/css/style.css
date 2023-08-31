@@ -110,3 +110,30 @@ body {
     background: #ae0001;
     box-shadow: none;
 }
+
+/* Home Screen Popup Styles */
+
+.home-popup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.9);
+    width: 500px;
+    background: #740001;
+    border-radius: 6px;
+    padding: 10px 25px;
+}
+
+.home-popup h2 {
+    font-size: 50px;
+    text-align: center;
+    color: #fff;
+}
+
+.home-popup .info {
+    font-size: 16px;
+    display: inline-block;
+    color: #fff;
+    font-weight: 500;
+    margin: 7px 0;
+}
