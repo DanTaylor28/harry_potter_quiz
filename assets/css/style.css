@@ -50,24 +50,42 @@ body {
 }
 
 .main {
-    min-height: 100vh;
-    background: url("../images/background_img.jpg") no-repeat;
-    background-size: cover;
-    background-position: center;
+  min-height: 100vh;
+  background: url("../images/background_img.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
 }
 
 .home {
-    position: relative;
-    padding-top: 81px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  position: relative;
+  padding-top: 81px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .home-content {
-    max-width: 600px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+  max-width: 600px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.home-content h1 {
+  font-size: 78px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.home-content p {
+  font-size: 16px;
+  text-align: center;
+  margin-bottom: 30px;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
