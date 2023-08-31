@@ -10,6 +10,7 @@
 
 body {
   color: #fff;
+  background: #0e0615;
   overflow: hidden;
 }
 
@@ -54,6 +55,11 @@ body {
   background: url("../images/background_img.jpg") no-repeat;
   background-size: cover;
   background-position: center;
+}
+
+main.active {
+    filter: blur(12px);
+    pointer-events: none;
 }
 
 .container {
@@ -122,6 +128,15 @@ body {
     background: #e4dfdd;
     border-radius: 6px;
     padding: 10px 25px;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.5s ease; 
+}
+
+.home-popup.active {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translate(-50%, -50%) scale(1);
 }
 
 .home-popup h2 {
