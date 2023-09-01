@@ -6,10 +6,17 @@ const main = document.querySelector(".main");
 const exitBtn = document.querySelector(".exit-btn");
 
 hamburger.addEventListener("click", mobileMenu);
-
 function mobileMenu() {
   hamburger.classList.toggle("active");
   navMenu.classList.toggle("active");
+}
+
+document.querySelectorAll(".nav-link").forEach((e) => {
+  e.addEventListener("click", closeMenu);
+});
+function closeMenu() {
+  hamburger.classList.remove("active");
+  navMenu.classList.remove("active");
 }
 
 enterBtn.onclick = () => {
