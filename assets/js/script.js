@@ -4,6 +4,8 @@ const enterBtn = document.querySelector(".enter-btn");
 const homePopup = document.querySelector(".home-popup");
 const main = document.querySelector(".main");
 const exitBtn = document.querySelector(".exit-btn");
+const continueBtn = document.querySelector(".continue-btn");
+const quizSection = document.querySelector(".quiz-section");
 
 // EventListener to check for when hamburger icon is clicked & call
 // mobileMenu function
@@ -26,15 +28,21 @@ function closeMenu() {
 }
 
 // Assigns active class to homePopup & main classes to reveal the popup &
-// blur contents of the main class. 
+// blur contents of the main class.
 enterBtn.onclick = () => {
   homePopup.classList.add("active");
   main.classList.add("active");
 };
 
-// Removes active class from homePopup & main to hide popup & remove 
+// Removes active class from homePopup & main to hide popup & remove
 // blur.
 exitBtn.onclick = () => {
+  homePopup.classList.remove("active");
+  main.classList.remove("active");
+};
+
+continueBtn.onclick = () => {
+  quizSection.classList.add("active");
   homePopup.classList.remove("active");
   main.classList.remove("active");
 };
