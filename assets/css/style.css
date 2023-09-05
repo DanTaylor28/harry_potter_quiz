@@ -273,7 +273,7 @@ main.active {
     top: 7rem;
     flex-direction: column;
     background-color: #000;
-    width: 50%;
+    width: 100%;
     border-radius: 10px;
     text-align: center;
     transition: 0.3s;
