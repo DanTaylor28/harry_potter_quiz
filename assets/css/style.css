@@ -249,7 +249,10 @@ main.active {
   position: relative;
   left: -50%;
   width: 100%;
-  background: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #0e0615;
   transition: .8s ease-in-out;
   transition-delay: .25s;
   z-index: 100;
