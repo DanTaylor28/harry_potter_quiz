@@ -297,8 +297,33 @@ main.active {
     background: #740001;
     border-radius: 3px;
     padding: 7px;
+    height: 42px;
 }
 
+/* Timer Section Styling */
+
+.quiz-header .timer {
+    color: #fff;
+    background: #740001;
+    padding: 7px;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 150px;
+    height: 42px;
+}
+
+.quiz-header .timer .timer-sec {
+    height: 30px;
+    width: 45px;
+    color: #fff;
+    border-radius: 5px;
+    text-align: center;
+    background: #5d5d5d;
+    border: 1px solid #5d5d5d;
+}
+ 
 /* Media Queries For Responsive Navbar */
 
 @media only screen and (max-width: 768px) {
