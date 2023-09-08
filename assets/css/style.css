@@ -370,6 +370,20 @@ main.active {
     font-weight: 600;
 }
 
+.quiz-footer .music-btn {
+    border: none;
+    background: transparent;
+    color: #fff;
+    font-size: 16px;
+}
+
+.quiz-footer .sound-btn {
+    border: none;
+    background: transparent;
+    color: #fff;
+    font-size: 16px;
+}
+
 /* Media Queries For Responsive Navbar */
 
 @media only screen and (max-width: 768px) {
