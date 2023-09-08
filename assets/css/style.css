@@ -247,8 +247,8 @@ main.active {
 
 .quiz-section {
   position: relative;
-  /* left: -50%; */
-  left: 0;
+  left: -50%;
+  /* left: 0; */
   width: 100%;
   display: flex;
   justify-content: center;
