@@ -409,7 +409,7 @@ main.active {
     color: rgba(255, 255, 255, 0.3);
     cursor: pointer;
     transition: 0.5s;
-    pointer-events: none;
+    /* pointer-events: none; */
 }
 
 .quiz-footer .next-btn:hover {
