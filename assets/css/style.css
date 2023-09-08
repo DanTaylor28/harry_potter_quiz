@@ -375,6 +375,7 @@ main.active {
     background: transparent;
     color: #fff;
     font-size: 16px;
+    cursor: pointer;
 }
 
 .quiz-footer .sound-btn {
@@ -382,6 +383,27 @@ main.active {
     background: transparent;
     color: #fff;
     font-size: 16px;
+    cursor: pointer;
+}
+
+.quiz-footer .next-btn {
+    font-size: 16px;
+    font-weight: 600;
+    width: 100px;
+    height: 45px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    outline: none;
+    border-radius: 6px;
+    color: rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+    transition: 0.5s;
+    pointer-events: none;
+}
+
+.quiz-footer .next-btn:hover {
+    background: #ae0001;
+    border-color: #ae0001;
 }
 
 /* Media Queries For Responsive Navbar */
