@@ -272,6 +272,17 @@ main.active {
   padding: 20px 30px;
   display: flex;
   flex-direction: column;
+  opacity: 0;
+  pointer-events: none;
+  transform: scale(0.9);
+}
+
+.quiz-section .quiz-box.active {
+    opacity: 1;
+    pointer-events: auto;
+    transform: scale(1);
+    transition: 1s ease;
+    transition-delay: 1s;
 }
 
 .quiz-box h1 {

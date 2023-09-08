@@ -6,6 +6,7 @@ const main = document.querySelector(".main");
 const exitBtn = document.querySelector(".exit-btn");
 const continueBtn = document.querySelector(".continue-btn");
 const quizSection = document.querySelector(".quiz-section");
+const quizBox = document.querySelector(".quiz-box")
 
 // EventListener to check for when hamburger icon is clicked & call
 // mobileMenu function
@@ -41,8 +42,10 @@ exitBtn.onclick = () => {
   main.classList.remove("active");
 };
 
+// Adds active class to show quiz section and remove the home popup & blur
 continueBtn.onclick = () => {
   quizSection.classList.add("active");
   homePopup.classList.remove("active");
   main.classList.remove("active");
+  quizBox.classList.add("active");
 };
