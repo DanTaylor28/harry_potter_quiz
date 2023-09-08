@@ -6,7 +6,7 @@ const main = document.querySelector(".main");
 const exitBtn = document.querySelector(".exit-btn");
 const continueBtn = document.querySelector(".continue-btn");
 const quizSection = document.querySelector(".quiz-section");
-const quizBox = document.querySelector(".quiz-box")
+const quizBox = document.querySelector(".quiz-box");
 
 // EventListener to check for when hamburger icon is clicked & call
 // mobileMenu function
@@ -48,4 +48,14 @@ continueBtn.onclick = () => {
   homePopup.classList.remove("active");
   main.classList.remove("active");
   quizBox.classList.add("active");
+
+  displayQuestions(0)
 };
+
+let questionCount = 0;
+
+function displayQuestions(index) {
+  const questionText = document.querySelector(".question-text");
+
+  questionText.textContent = `${questions[index].numb}. ${questions[index].question}`;
+}
