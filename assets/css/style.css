@@ -323,6 +323,14 @@ main.active {
     background: #5d5d5d;
     border: 1px solid #5d5d5d;
 }
+
+.quiz-box .time-line {
+    bottom: 0px;
+    left: 0px;
+    margin-bottom: 30px;
+    height: 2px;
+    background: #00a63d;
+}
  
 /* Media Queries For Responsive Navbar */
 
