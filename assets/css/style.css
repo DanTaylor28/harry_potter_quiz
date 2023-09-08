@@ -454,4 +454,9 @@ main.active {
   .home-popup {
     width: 90%;
   }
+
+  .quiz-section .quiz-box {
+    width: 100%;
+    border: none;
+  }
 }
