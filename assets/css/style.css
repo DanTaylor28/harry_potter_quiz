@@ -355,7 +355,21 @@ main.active {
     background: rgba(255, 255, 255, 0.1);
     background-color: rgba(255, 255, 255, 0.1);
 }
- 
+
+.quiz-box .quiz-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 2px solid #740001;
+    padding-top: 20px;
+    margin-top: 25px;
+} 
+
+.quiz-footer .question-total {
+    font-size: 16px;
+    font-weight: 600;
+}
+
 /* Media Queries For Responsive Navbar */
 
 @media only screen and (max-width: 768px) {
