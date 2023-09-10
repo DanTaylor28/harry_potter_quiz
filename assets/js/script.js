@@ -8,6 +8,7 @@ const continueBtn = document.querySelector(".continue-btn");
 const quizSection = document.querySelector(".quiz-section");
 const quizBox = document.querySelector(".quiz-box");
 const nextBtn = document.querySelector(".next-btn");
+const optionList = document.querySelector(".option-list");
 
 // EventListener to check for when hamburger icon is clicked & call
 // mobileMenu function
@@ -63,4 +64,11 @@ nextBtn.onclick = () => {
 function displayQuestions(index) {
   const questionText = document.querySelector(".question-text");
   questionText.textContent = `${questions[index].numb}. ${questions[index].question}`;
+
+  let optionTags = `<div class="option"><span>${questions[index].options[0]}</span></div>
+  <div class="option"><span>${questions[index].options[1]}</span></div>
+  <div class="option"><span>${questions[index].options[2]}</span></div>
+  <div class="option"><span>${questions[index].options[3]}</span></div>`;
+
+  optionList.innerHTML = optionTags;
 }
