@@ -61,8 +61,10 @@ nextBtn.onclick = () => {
   displayQuestions(questionCount);
 };
 
+// Retrieves the questions & options from the array.
 function displayQuestions(index) {
   const questionText = document.querySelector(".question-text");
+//   Inserts correct question index & text into the below variable.
   questionText.textContent = `${questions[index].numb}. ${questions[index].question}`;
 
   let optionTags = `<div class="option"><span>${questions[index].options[0]}</span></div>
@@ -70,5 +72,6 @@ function displayQuestions(index) {
   <div class="option"><span>${questions[index].options[2]}</span></div>
   <div class="option"><span>${questions[index].options[3]}</span></div>`;
 
+//   Sets value of optionList to above html with correct user choices.
   optionList.innerHTML = optionTags;
 }
