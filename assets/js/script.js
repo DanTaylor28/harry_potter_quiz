@@ -83,6 +83,11 @@ function displayQuestions(index) {
 
   //   Sets value of optionList to above html with correct user choices.
   optionList.innerHTML = optionTags;
+
+  const option = document.querySelectorAll(".option");
+  for (let i = 0; i < option.length; i++) {
+    option[i].setAttribute("onclick", "optionClicked(this)");
+  }
 }
 
 function questionCounter(index) {
