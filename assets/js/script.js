@@ -52,14 +52,19 @@ continueBtn.onclick = () => {
   quizBox.classList.add("active");
 
   displayQuestions(0);
+  questionCounter(1);
 };
 
 let questionCount = 0;
+let questionNumb = 1;
 
 nextBtn.onclick = () => {
   if (questionCount < questions.length - 1) {
     questionCount++;
     displayQuestions(questionCount);
+
+    questionNumb++;
+    questionCounter(questionNumb);
   } else {
     console.log("quiz finished");
   }
@@ -78,4 +83,9 @@ function displayQuestions(index) {
 
   //   Sets value of optionList to above html with correct user choices.
   optionList.innerHTML = optionTags;
+}
+
+function questionCounter(index) {
+  const questionTotal = document.querySelector(".question-total");
+  questionTotal.textContent = `Question ${index} of ${questions.length}`;
 }
