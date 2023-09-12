@@ -367,6 +367,18 @@ main.active {
     background-color: rgba(255, 255, 255, 0.1);
 }
 
+.option-list .option.correct {
+    background: #0e0615;
+    color: #00a63d;
+    border-color: #00a63d;
+}
+
+.option-list .option.incorrect {
+    background: #0e0615;
+    color: #ae0001;
+    border-color: #ae0001;
+}
+
 .quiz-box .quiz-footer {
     display: flex;
     justify-content: space-between;
