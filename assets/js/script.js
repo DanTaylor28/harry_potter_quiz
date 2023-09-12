@@ -93,11 +93,16 @@ function displayQuestions(index) {
 function optionClicked(answer) {
   let userAnswer = answer.textContent;
   let correctAnswer = questions[questionCount].answer;
+  let allOptions = optionList.children.length;
 
   if (userAnswer == correctAnswer) {
     answer.classList.add("correct");
   } else {
     answer.classList.add("incorrect");
+  }
+
+  for (let i = 0; i < allOptions; i++) {
+    optionList.children[i].classList.add("disabled");
   }
 }
 
