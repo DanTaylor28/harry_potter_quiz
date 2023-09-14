@@ -379,6 +379,10 @@ main.active {
     border-color: #ae0001;
 }
 
+.option-list .option.disabled {
+    pointer-events: none;
+}
+
 .quiz-box .quiz-footer {
     display: flex;
     justify-content: space-between;
