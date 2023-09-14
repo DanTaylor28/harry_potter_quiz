@@ -53,10 +53,12 @@ continueBtn.onclick = () => {
 
   displayQuestions(0);
   questionCounter(1);
+  headerScore();
 };
 
 let questionCount = 0;
 let questionNumb = 1;
+let userScore = 0;
 
 nextBtn.onclick = () => {
   if (questionCount < questions.length - 1) {
@@ -101,6 +103,8 @@ function optionClicked(answer) {
   // a class of either correct or incorrect depending on this.
   if (userAnswer == correctAnswer) {
     answer.classList.add("correct");
+    userScore += 1;
+    headerScore();
   } else {
     answer.classList.add("incorrect");
 
@@ -124,4 +128,11 @@ function questionCounter(index) {
   const questionTotal = document.querySelector(".question-total");
   // Sets questionTotal to the corresponding question number.
   questionTotal.textContent = `Question ${index} of ${questions.length}`;
+}
+
+function headerScore() {
+  // Retrieve necessary class
+  const scoreSpan = document.querySelector(".header-score");
+  //   Update user score in the quiz heading
+  scoreSpan.textContent = `Score: ${userScore} / ${questions.length}`;
 }
