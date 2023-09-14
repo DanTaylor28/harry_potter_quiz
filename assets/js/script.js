@@ -73,7 +73,7 @@ nextBtn.onclick = () => {
 // Retrieves the questions & options from the array.
 function displayQuestions(index) {
   const questionText = document.querySelector(".question-text");
-  //   Inserts correct question index & text into the below variable.
+  // Inserts correct question index & text into the below variable.
   questionText.textContent = `${questions[index].numb}. ${questions[index].question}`;
 
   let optionTags = `<div class="option"><span>${questions[index].options[0]}</span></div>
@@ -81,9 +81,11 @@ function displayQuestions(index) {
   <div class="option"><span>${questions[index].options[2]}</span></div>
   <div class="option"><span>${questions[index].options[3]}</span></div>`;
 
-  //   Sets value of optionList to above html with correct user choices.
+  // Sets value of optionList to above html with correct user choices.
   optionList.innerHTML = optionTags;
 
+  // Loops over optionList and assigns an onclick which calls optionClicked(this)
+  // to each option in optionList.
   const option = document.querySelectorAll(".option");
   for (let i = 0; i < option.length; i++) {
     option[i].setAttribute("onclick", "optionClicked(this)");
@@ -95,18 +97,25 @@ function optionClicked(answer) {
   let correctAnswer = questions[questionCount].answer;
   let allOptions = optionList.children.length;
 
+  // Below code determines whether the userAnswer is correct and assigns
+  // a class of either correct or incorrect depending on this.
   if (userAnswer == correctAnswer) {
     answer.classList.add("correct");
   } else {
     answer.classList.add("incorrect");
   }
 
+  // Below for loop assigns the disabled class to all options after the user
+  // has made a selection, which then prevents any future pointer events on
+  // them therefore disabling them.
   for (let i = 0; i < allOptions; i++) {
     optionList.children[i].classList.add("disabled");
   }
 }
 
 function questionCounter(index) {
+  // Retrieves necessary class.
   const questionTotal = document.querySelector(".question-total");
+  // Sets questionTotal to the corresponding question number.
   questionTotal.textContent = `Question ${index} of ${questions.length}`;
 }
