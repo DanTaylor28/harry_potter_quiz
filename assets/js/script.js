@@ -103,6 +103,12 @@ function optionClicked(answer) {
     answer.classList.add("correct");
   } else {
     answer.classList.add("incorrect");
+
+    for (let i = 0; i < allOptions; i++) {
+      if (optionList.children[i].textContent == correctAnswer) {
+        optionList.children[i].setAttribute("class", "option correct");
+      }
+    }
   }
 
   // Below for loop assigns the disabled class to all options after the user
