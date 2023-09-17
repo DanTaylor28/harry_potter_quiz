@@ -247,8 +247,8 @@ main.active {
 
 .quiz-section {
   position: relative;
-  left: -50%;
-  /* left: 0; */
+  /* left: -50%; */
+  left: 0;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -439,6 +439,29 @@ main.active {
     background: #ae0001;
     border-color: #fff;
 }
+
+/* Result Section Styling */
+
+.quiz-section .result-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    border: 2px solid #740001;
+    border-radius: 6px;
+    padding: 20px;
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.result-box h2 {
+    font-size: 52px;
+}
+
+
 
 /* Media Queries For Responsive Navbar */
 
