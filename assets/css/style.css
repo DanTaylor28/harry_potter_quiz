@@ -461,7 +461,36 @@ main.active {
     font-size: 52px;
 }
 
+.result-box .score-container {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0 40px;
+}
 
+.score-container .circular-value {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    background: conic-gradient(#740001 3.6deg, rgba(255, 255, 255, 0.1) 0deg);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.score-container .progress-value {
+    position: relative;
+    font-size: 45px;
+    font-weight: 600;
+}
+
+.score-container .score-text {
+    font-size: 26px;
+    font-weight: 600;
+    margin-top: 20px;
+}
 
 /* Media Queries For Responsive Navbar */
 
