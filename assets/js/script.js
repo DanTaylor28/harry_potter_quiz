@@ -147,4 +147,22 @@ function displayResultBox() {
 
   const scoreText = document.querySelector(".score-text");
   scoreText.textContent = `You Scored ${userScore} out of ${questions.length}`;
+
+  const circularValue = document.querySelector(".circular-value");
+  const progressValue = document.querySelector(".progress-value");
+
+  let progressStartValue = -1;
+  let progressEndValue = (userScore / questions.length) * 100;
+  let speed = 20;
+
+  let progress = setInterval(() => {
+    progressStartValue++;
+    progressValue.textContent = `${progressStartValue}%`;
+    circularValue.style.background = `conic-gradient(#740001 ${
+      progressStartValue * 3.6
+    }deg, rgba(255, 255, 255, .1) 0deg)`;
+    if (progressStartValue == progressEndValue) {
+      clearInterval(progress);
+    }
+  }, speed);
 }
