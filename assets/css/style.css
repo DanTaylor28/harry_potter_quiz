@@ -492,6 +492,10 @@ main.active {
     margin-top: 20px;
 }
 
+.result-box .result-btns {
+    display: flex;
+}
+
 .result-btns button {
     width: 130px;
     height: 50px;
@@ -573,6 +577,10 @@ main.active {
 
   .quiz-section .quiz-box {
     width: 100%;
+    border: none;
+  }
+
+  .quiz-section .result-box {
     border: none;
   }
 }
