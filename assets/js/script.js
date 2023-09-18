@@ -144,4 +144,7 @@ function headerScore() {
 function displayResultBox() {
   quizBox.classList.remove("active");
   resultBox.classList.add("active");
+
+  const scoreText = document.querySelector(".score-text");
+  scoreText.textContent = `You Scored ${userScore} out of ${questions.length}`;
 }
