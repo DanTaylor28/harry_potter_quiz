@@ -9,6 +9,7 @@ const quizSection = document.querySelector(".quiz-section");
 const quizBox = document.querySelector(".quiz-box");
 const nextBtn = document.querySelector(".next-btn");
 const optionList = document.querySelector(".option-list");
+const resultBox = document.querySelector(".result-box");
 
 // EventListener to check for when hamburger icon is clicked & call
 // mobileMenu function
@@ -69,7 +70,7 @@ nextBtn.onclick = () => {
     questionCounter(questionNumb);
     nextBtn.classList.remove("active");
   } else {
-    console.log("quiz finished");
+    displayResultBox();
   }
 };
 
@@ -138,4 +139,9 @@ function headerScore() {
   const scoreSpan = document.querySelector(".header-score");
   //   Update user score in the quiz heading
   scoreSpan.textContent = `Score: ${userScore} / ${questions.length}`;
+}
+
+function displayResultBox() {
+  quizBox.classList.remove("active");
+  resultBox.classList.add("active");
 }
