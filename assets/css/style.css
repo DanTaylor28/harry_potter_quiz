@@ -480,6 +480,15 @@ main.active {
     align-items: center;
 }
 
+.score-container .circular-value::before {
+    content: "";
+    position: absolute;
+    width: 210px;
+    height: 210px;
+    border-radius: 50%;
+    background: #0e0615;
+}
+
 .score-container .progress-value {
     position: relative;
     font-size: 45px;
