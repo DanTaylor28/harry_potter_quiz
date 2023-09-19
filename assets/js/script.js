@@ -10,6 +10,7 @@ const quizBox = document.querySelector(".quiz-box");
 const nextBtn = document.querySelector(".next-btn");
 const optionList = document.querySelector(".option-list");
 const resultBox = document.querySelector(".result-box");
+const tryAgainBtn = document.querySelector(".tryAgain-btn");
 
 // EventListener to check for when hamburger icon is clicked & call
 // mobileMenu function
@@ -72,6 +73,20 @@ nextBtn.onclick = () => {
   } else {
     displayResultBox();
   }
+};
+
+tryAgainBtn.onclick = () => {
+  resultBox.classList.remove("active");
+  nextBtn.classList.remove("active");
+  quizBox.classList.add("active");
+
+  questionCount = 0;
+  questionNumb = 1;
+  userScore = 0;
+
+  displayQuestions(questionCount);
+  questionCounter(questionNumb);
+  headerScore();
 };
 
 // Retrieves the questions & options from the array.
