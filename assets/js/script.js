@@ -54,6 +54,7 @@ continueBtn.onclick = () => {
   main.classList.remove("active");
   quizBox.classList.add("active");
 
+  // Calls game functions
   displayQuestions(0);
   questionCounter(1);
   headerScore();
@@ -63,6 +64,8 @@ let questionCount = 0;
 let questionNumb = 1;
 let userScore = 0;
 
+// Increments question count & displays next question in array as long as
+// there is one, if not display result box.
 nextBtn.onclick = () => {
   if (questionCount < questions.length - 1) {
     questionCount++;
@@ -76,6 +79,7 @@ nextBtn.onclick = () => {
   }
 };
 
+// Restarts quiz from beginning, resetting the score and question number.
 tryAgainBtn.onclick = () => {
   resultBox.classList.remove("active");
   nextBtn.classList.remove("active");
@@ -85,11 +89,13 @@ tryAgainBtn.onclick = () => {
   questionNumb = 1;
   userScore = 0;
 
+  // Calls game functions again.
   displayQuestions(questionCount);
   questionCounter(questionNumb);
   headerScore();
 };
 
+// Removes all active classes and resets game scores.
 homeBtn.onclick = () => {
   quizSection.classList.remove("active");
   nextBtn.classList.remove("active");
@@ -139,6 +145,9 @@ function optionClicked(answer) {
   } else {
     answer.classList.add("incorrect");
 
+    // Below code executes if incorrect answer given. Loops over all options
+    // and sets correct class to correct answer to highlight in green for
+    // user to see.
     for (let i = 0; i < allOptions; i++) {
       if (optionList.children[i].textContent == correctAnswer) {
         optionList.children[i].setAttribute("class", "option correct");
@@ -166,7 +175,7 @@ function questionCounter(index) {
 function headerScore() {
   // Retrieve necessary class
   const scoreSpan = document.querySelector(".header-score");
-  //   Update user score in the quiz heading
+  // Update user score in the quiz heading
   scoreSpan.textContent = `Score: ${userScore} / ${questions.length}`;
 }
 
@@ -174,22 +183,31 @@ function displayResultBox() {
   quizBox.classList.remove("active");
   resultBox.classList.add("active");
 
+  // Updates score-text with users total score.
   const scoreText = document.querySelector(".score-text");
   scoreText.textContent = `You Scored ${userScore} out of ${questions.length}`;
 
   const circularValue = document.querySelector(".circular-value");
   const progressValue = document.querySelector(".progress-value");
 
+  // Value of -1, prevents progress bar from continuously spinning if
+  // user scores 0.
   let progressStartValue = -1;
+  // EndValue equates to percentage of questions the user answered correctly.
   let progressEndValue = (userScore / questions.length) * 100;
+  // Speed at which progress bar moves.
   let speed = 20;
 
+  // Interval starts increasing the startValue which fills up circular
+  // progress bar using the conic-gradient background style.
   let progress = setInterval(() => {
     progressStartValue++;
     progressValue.textContent = `${progressStartValue}%`;
     circularValue.style.background = `conic-gradient(#740001 ${
       progressStartValue * 3.6
     }deg, rgba(255, 255, 255, .1) 0deg)`;
+    // When startValue == endValue, clear the interval ie Stop progress
+    // bar spinning when at 100%.
     if (progressStartValue == progressEndValue) {
       clearInterval(progress);
     }

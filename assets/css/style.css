@@ -458,7 +458,7 @@ main.active {
   align-items: center;
   opacity: 0;
   pointer-events: none;
-  transition: .3s ease;
+  transition: 0.3s ease;
 }
 
 .quiz-section .result-box.active {
