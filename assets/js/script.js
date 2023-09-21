@@ -283,14 +283,14 @@ function startTimerLine(time) {
 const mediaQuery = window.matchMedia("(max-width: 440px)");
 if (mediaQuery.matches) {
   function startTimerLine(time) {
-    counterLine = setInterval(timer, 49);
+    counterLine = setInterval(timer, 56);
     function timer() {
       time += 1;
       timeLine.style.width = time + "px";
-      if (time > 264) {
+      if (time > 230) {
         timeLine.style.background = "#ae0001";
       }
-      if (time > 328) {
+      if (time > 288) {
         clearInterval(counterLine);
       }
     }

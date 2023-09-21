@@ -603,3 +603,9 @@ main.active {
     border: none;
   }
 }
+
+@media only screen and (max-width: 440px) {
+    .quiz-section .quiz-box {
+        max-width: 348px;
+      }
+}
