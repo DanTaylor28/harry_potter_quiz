@@ -98,6 +98,8 @@ tryAgainBtn.onclick = () => {
   // Calls game functions again.
   displayQuestions(questionCount);
   questionCounter(questionNumb);
+  timeText.textContent = "Time Left";
+  startTimer(timeValue);
   headerScore();
 };
 
