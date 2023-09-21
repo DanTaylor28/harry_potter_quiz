@@ -271,3 +271,21 @@ function startTimerLine(time) {
   }
   timeLine.style.background = "#00a63d";
 }
+
+const mediaQuery = window.matchMedia("(max-width: 440px)");
+if (mediaQuery.matches) {
+  function startTimerLine(time) {
+    counterLine = setInterval(timer, 49);
+    function timer() {
+      time += 1;
+      timeLine.style.width = time + "px";
+      if (time > 264) {
+        timeLine.style.background = "#ae0001";
+      }
+      if (time > 328) {
+        clearInterval(counterLine);
+      }
+    }
+    timeLine.style.background = "#00a63d";
+  }
+}
