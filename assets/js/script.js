@@ -260,20 +260,26 @@ function startTimer(time) {
 }
 
 function startTimerLine(time) {
+  // Speed timeline progresses set to 37.
   counterLine = setInterval(timer, 37);
   function timer() {
     time += 1;
+    // As time progresses, so too does px width.
     timeLine.style.width = time + "px";
+    // Chnage color to red when px width > 350
     if (time > 350) {
       timeLine.style.background = "#ae0001";
     }
+    // Clear interval when width is entire length of results box ie 436px.
     if (time > 436) {
       clearInterval(counterLine);
     }
   }
+// Change color back to green in prep for next question.
   timeLine.style.background = "#00a63d";
 }
 
+// Media query to ensure timeline functions correctly on mobile devices.
 const mediaQuery = window.matchMedia("(max-width: 440px)");
 if (mediaQuery.matches) {
   function startTimerLine(time) {
