@@ -229,15 +229,19 @@ function startTimer(time) {
   let correctAnswer = questions[questionCount].answer;
   let allOptions = optionList.children.length;
 
+  // Timer that counts down in 1 second increments.
   counter = setInterval(timer, 1000);
   function timer() {
     timeCount.textContent = time;
     time--;
 
+    //  Clear timer and update text when timer reaches zero. 
     if (time < 0) {
       clearInterval(counter);
       timeText.textContent = "Time Off";
 
+    // If timer reaches 0, assign 'correct' class to correct answer &
+    // disable all options.
       for (let i = 0; i < allOptions; i++) {
         if (optionList.children[i].textContent == correctAnswer) {
           optionList.children[i].setAttribute("class", "option correct");
