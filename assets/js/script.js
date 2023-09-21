@@ -104,6 +104,7 @@ tryAgainBtn.onclick = () => {
   questionCounter(questionNumb);
   timeText.textContent = "Time Left";
   startTimer(timeValue);
+  startTimerLine(widthValue);
   headerScore();
 };
 
@@ -150,6 +151,7 @@ function optionClicked(answer) {
 
   clearInterval(counter);
   timeText.textContent = "Time Off";
+  clearInterval(counterLine);
 
   // Below code determines whether the userAnswer is correct and assigns
   // a class of either correct or incorrect depending on this.
