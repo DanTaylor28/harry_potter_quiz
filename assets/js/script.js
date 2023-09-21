@@ -14,6 +14,7 @@ const tryAgainBtn = document.querySelector(".tryAgain-btn");
 const homeBtn = document.querySelector(".home-btn");
 const timeText = document.querySelector(".timer-text");
 const timeCount = document.querySelector(".timer-sec");
+const timeLine = document.querySelector(".time-line");
 
 // EventListener to check for when hamburger icon is clicked & call
 // mobileMenu function
@@ -61,12 +62,14 @@ continueBtn.onclick = () => {
   questionCounter(1);
   headerScore();
   startTimer(15);
+  startTimerLine(0);
 };
 
 let questionCount = 0;
 let questionNumb = 1;
 let userScore = 0;
 let timeValue = 15;
+let widthValue = 0;
 
 // Increments question count & displays next question in array as long as
 // there is one, if not display result box.
@@ -79,6 +82,7 @@ nextBtn.onclick = () => {
     questionCounter(questionNumb);
     timeText.textContent = "Time Left";
     startTimer(timeValue);
+    startTimerLine(widthValue);
     nextBtn.classList.remove("active");
   } else {
     displayResultBox();
@@ -235,13 +239,13 @@ function startTimer(time) {
     timeCount.textContent = time;
     time--;
 
-    //  Clear timer and update text when timer reaches zero. 
+    //  Clear timer and update text when timer reaches zero.
     if (time < 0) {
       clearInterval(counter);
       timeText.textContent = "Time Off";
 
-    // If timer reaches 0, assign 'correct' class to correct answer &
-    // disable all options.
+      // If timer reaches 0, assign 'correct' class to correct answer &
+      // disable all options.
       for (let i = 0; i < allOptions; i++) {
         if (optionList.children[i].textContent == correctAnswer) {
           optionList.children[i].setAttribute("class", "option correct");
@@ -250,5 +254,13 @@ function startTimer(time) {
       }
       nextBtn.classList.add("active");
     }
+  }
+}
+
+function startTimerLine(time) {
+  counterLine = setInterval(timer, 37);
+  function timer() {
+    time += 1;
+    timeLine.style.width = time + "px";
   }
 }
