@@ -262,5 +262,9 @@ function startTimerLine(time) {
   function timer() {
     time += 1;
     timeLine.style.width = time + "px";
+
+    if (time > 436) {
+      clearInterval(counterLine);
+    }
   }
 }
