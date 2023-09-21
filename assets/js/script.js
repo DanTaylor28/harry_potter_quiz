@@ -262,9 +262,12 @@ function startTimerLine(time) {
   function timer() {
     time += 1;
     timeLine.style.width = time + "px";
-
+    if (time > 350) {
+      timeLine.style.background = "#ae0001";
+    }
     if (time > 436) {
       clearInterval(counterLine);
     }
   }
+  timeLine.style.background = "#00a63d";
 }
