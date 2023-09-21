@@ -12,6 +12,8 @@ const optionList = document.querySelector(".option-list");
 const resultBox = document.querySelector(".result-box");
 const tryAgainBtn = document.querySelector(".tryAgain-btn");
 const homeBtn = document.querySelector(".home-btn");
+const timeText = document.querySelector(".timer-text");
+const timeCount = document.querySelector(".timer-sec");
 
 // EventListener to check for when hamburger icon is clicked & call
 // mobileMenu function
@@ -58,11 +60,13 @@ continueBtn.onclick = () => {
   displayQuestions(0);
   questionCounter(1);
   headerScore();
+  startTimer(15);
 };
 
 let questionCount = 0;
 let questionNumb = 1;
 let userScore = 0;
+let timeValue = 15;
 
 // Increments question count & displays next question in array as long as
 // there is one, if not display result box.
@@ -73,6 +77,8 @@ nextBtn.onclick = () => {
 
     questionNumb++;
     questionCounter(questionNumb);
+    timeText.textContent = "Time Left";
+    startTimer(timeValue);
     nextBtn.classList.remove("active");
   } else {
     displayResultBox();
@@ -135,6 +141,9 @@ function optionClicked(answer) {
   let userAnswer = answer.textContent;
   let correctAnswer = questions[questionCount].answer;
   let allOptions = optionList.children.length;
+
+  clearInterval(counter);
+  timeText.textContent = "Time Off";
 
   // Below code determines whether the userAnswer is correct and assigns
   // a class of either correct or incorrect depending on this.
@@ -212,4 +221,28 @@ function displayResultBox() {
       clearInterval(progress);
     }
   }, speed);
+}
+
+function startTimer(time) {
+  let correctAnswer = questions[questionCount].answer;
+  let allOptions = optionList.children.length;
+
+  counter = setInterval(timer, 1000);
+  function timer() {
+    timeCount.textContent = time;
+    time--;
+
+    if (time < 0) {
+      clearInterval(counter);
+      timeText.textContent = "Time Off";
+
+      for (let i = 0; i < allOptions; i++) {
+        if (optionList.children[i].textContent == correctAnswer) {
+          optionList.children[i].setAttribute("class", "option correct");
+        }
+        optionList.children[i].classList.add("disabled");
+      }
+      nextBtn.classList.add("active");
+    }
+  }
 }
