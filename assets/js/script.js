@@ -15,7 +15,7 @@ const homeBtn = document.querySelector(".home-btn");
 const timeText = document.querySelector(".timer-text");
 const timeCount = document.querySelector(".timer-sec");
 const timeLine = document.querySelector(".time-line");
-const soundIcon = document.querySelector("sound-icon");
+const soundIcon = document.getElementById("sound-icon");
 
 const correctAudio = new Audio("correct.mp3");
 const incorrectAudio = new Audio("incorrect.mp3");
