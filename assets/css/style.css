@@ -34,10 +34,8 @@ html {
 }
 
 .logo {
-  font-size: 32px;
-  color: #fff;
-  font-weight: 700;
-  text-decoration: none;
+  height: 80px;
+  width: 80px;
 }
 
 .nav-bar {
