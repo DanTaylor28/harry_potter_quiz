@@ -339,14 +339,14 @@ function muteMusic() {
 const mediaQuery = window.matchMedia("(max-width: 440px)");
 if (mediaQuery.matches) {
   function startTimerLine(time) {
-    counterLine = setInterval(timer, 56);
+    counterLine = setInterval(timer, 49);
     function timer() {
       time += 1;
       timeLine.style.width = time + "px";
-      if (time > 230) {
+      if (time > 267) {
         timeLine.style.background = "#ae0001";
       }
-      if (time > 288) {
+      if (time > 327) {
         clearInterval(counterLine);
       }
     }

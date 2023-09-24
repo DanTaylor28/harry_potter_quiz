@@ -433,7 +433,7 @@ main.active {
   background: #ae0001;
   border: 1px solid #ae0001;
   border-radius: 3px;
-  margin-right: 10px;
+  margin-right: 3px;
   color: #fff;
   font-size: 16px;
   cursor: pointer;
@@ -445,7 +445,7 @@ main.active {
   background: #00a63d;
   border: 1px solid #00a63d;
   border-radius: 3px;
-  margin-left: 10px;
+  margin-left: 3px;
   color: #fff;
   font-size: 16px;
   cursor: pointer;
@@ -644,6 +644,7 @@ main.active {
 
 @media only screen and (max-width: 440px) {
   .quiz-section .quiz-box {
-    max-width: 348px;
+    /* max-width: 348px; */
+    max-width: 388px;
   }
 }
