@@ -121,6 +121,7 @@ main.active {
   display: flex;
   height: 100vh;
   width: 200%;
+  overflow: hidden;
 }
 
 .home {
