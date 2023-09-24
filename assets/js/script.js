@@ -254,6 +254,7 @@ function startTimer(time) {
     if (time < 0) {
       clearInterval(counter);
       timeText.textContent = "Time Off";
+      incorrectAudio.play();
 
       // If timer reaches 0, assign 'correct' class to correct answer &
       // disable all options.
