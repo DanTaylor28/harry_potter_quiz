@@ -84,12 +84,14 @@
                 loop
                 muted
               ></audio>
-              <button onclick="muteMusic()" class="music-btn">
-                <i class="fa-solid fa-music" id="music-icon"></i>
-              </button>
-              <button onclick="muteSound()" class="sound-btn">
-                <i class="fa-solid fa-volume-high" id="sound-icon"></i>
-              </button>
+              <span class="audio-box">
+                <button onclick="muteMusic()" class="music-btn">
+                  <i class="fa-solid fa-music" id="music-icon"></i>
+                </button>
+                <button onclick="muteSound()" class="sound-btn">
+                  <i class="fa-solid fa-volume-high" id="sound-icon"></i>
+                </button>
+              </span>
               <button class="next-btn">Next</button>
             </div>
           </div>
@@ -153,8 +155,8 @@
         </li>
         <li>
           <span class="info">
-            This game implements sounds and music which can be toggled on &
-            off using the controls on the following page.
+            This game implements sounds and music which can be toggled on & off
+            using the controls on the following page.
           </span>
         </li>
       </ul>

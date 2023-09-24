@@ -16,6 +16,8 @@ const timeText = document.querySelector(".timer-text");
 const timeCount = document.querySelector(".timer-sec");
 const timeLine = document.querySelector(".time-line");
 const resultText = document.querySelector(".result-text");
+const soundBtn = document.querySelector(".sound-btn");
+const musicBtn = document.querySelector(".music-btn");
 
 const soundIcon = document.getElementById("sound-icon");
 const musicIcon = document.getElementById("music-icon");
@@ -308,11 +310,15 @@ function muteSound() {
     incorrectAudio.muted = true;
     soundIcon.classList.remove("fa-volume-high");
     soundIcon.classList.add("fa-volume-xmark");
+    soundBtn.style.background = "#ae0001";
+    soundBtn.style.border = "#ae0001";
   } else {
     correctAudio.muted = false;
     incorrectAudio.muted = false;
     soundIcon.classList.remove("fa-volume-xmark");
     soundIcon.classList.add("fa-volume-high");
+    soundBtn.style.background = "#00a63d";
+    soundBtn.style.border = "#00a63d";
   }
 }
 
@@ -320,8 +326,12 @@ function muteSound() {
 function muteMusic() {
   if (backgroundAudio.muted == false) {
     backgroundAudio.muted = true;
+    musicBtn.style.background = "#ae0001";
+    musicBtn.style.border = "#ae0001";
   } else {
     backgroundAudio.muted = false;
+    musicBtn.style.background = "#00a63d";
+    musicBtn.style.border = "#00a63d";
   }
 }
 

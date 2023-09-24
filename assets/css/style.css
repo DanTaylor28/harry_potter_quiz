@@ -207,7 +207,7 @@ main.active {
 }
 
 .home-popup li {
-    color: #740001;
+  color: #740001;
 }
 
 .home-popup .info {
@@ -215,7 +215,7 @@ main.active {
   display: inline-block;
   color: #000;
   font-weight: 500;
-  margin: 10px 0 10px 10px
+  margin: 10px 0 10px 10px;
 }
 
 .home-popup .popup-btn-group {
@@ -418,17 +418,34 @@ main.active {
   font-weight: 600;
 }
 
+.audio-box {
+  height: 45px;
+  border-radius: 3px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .quiz-footer .music-btn {
-  border: none;
-  background: transparent;
+  height: 30px;
+  width: 35px;
+  background: #ae0001;
+  border: 1px solid #ae0001;
+  border-radius: 3px;
+  margin-right: 10px;
   color: #fff;
   font-size: 16px;
   cursor: pointer;
 }
 
 .quiz-footer .sound-btn {
-  border: none;
-  background: transparent;
+  height: 30px;
+  width: 35px;
+  background: #00a63d;
+  border: 1px solid #00a63d;
+  border-radius: 3px;
+  margin-left: 10px;
   color: #fff;
   font-size: 16px;
   cursor: pointer;
@@ -442,7 +459,7 @@ main.active {
   background: rgba(255, 255, 255, 0.1);
   border: 2px solid rgba(255, 255, 255, 0.1);
   outline: none;
-  border-radius: 6px;
+  border-radius: 3px;
   color: rgba(255, 255, 255, 0.3);
   cursor: pointer;
   transition: 0.5s;
@@ -452,13 +469,12 @@ main.active {
 .quiz-footer .next-btn.active {
   pointer-events: auto;
   background: #740001;
-  border: 1px solid #fff;
+  border: 1px solid #740001;
   color: #fff;
 }
 
 .quiz-footer .next-btn.active:hover {
   background: #ae0001;
-  border-color: #fff;
 }
 
 /* Result Section Styling */
