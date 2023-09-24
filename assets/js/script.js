@@ -15,6 +15,10 @@ const homeBtn = document.querySelector(".home-btn");
 const timeText = document.querySelector(".timer-text");
 const timeCount = document.querySelector(".timer-sec");
 const timeLine = document.querySelector(".time-line");
+const soundIcon = document.querySelector("sound-icon");
+
+const correctAudio = new Audio("correct.mp3");
+const incorrectAudio = new Audio("incorrect.mp3");
 
 // EventListener to check for when hamburger icon is clicked & call
 // mobileMenu function
@@ -275,8 +279,22 @@ function startTimerLine(time) {
       clearInterval(counterLine);
     }
   }
-// Change color back to green in prep for next question.
+  // Change color back to green in prep for next question.
   timeLine.style.background = "#00a63d";
+}
+
+function muteSound() {
+  if (correctAudio.muted == false) {
+    correctAudio.muted = true;
+    incorrectAudio.muted = true;
+    soundIcon.classList.remove("fa-volume-high");
+    soundIcon.classList.add("fa-volume-xmark");
+  } else {
+    correctAudio.muted = false;
+    incorrectAudio.muted = false;
+    soundIcon.classList.remove("fa-volume-xmark");
+    soundIcon.classList.add("fa-volume-high");
+  }
 }
 
 // Media query to ensure timeline functions correctly on mobile devices.
