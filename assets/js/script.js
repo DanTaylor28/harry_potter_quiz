@@ -16,6 +16,8 @@ const timeText = document.querySelector(".timer-text");
 const timeCount = document.querySelector(".timer-sec");
 const timeLine = document.querySelector(".time-line");
 const soundIcon = document.getElementById("sound-icon");
+const musicIcon = document.getElementById("music-icon");
+const backgroundAudio = document.getElementById("background-audio");
 
 const correctAudio = new Audio("assets/audio/correct.mp3");
 const incorrectAudio = new Audio("assets/audio/incorrect.mp3");
@@ -62,6 +64,7 @@ continueBtn.onclick = () => {
   quizBox.classList.add("active");
 
   // Calls game functions
+  backgroundAudio.play();
   displayQuestions(0);
   questionCounter(1);
   headerScore();
@@ -296,6 +299,14 @@ function muteSound() {
     incorrectAudio.muted = false;
     soundIcon.classList.remove("fa-volume-xmark");
     soundIcon.classList.add("fa-volume-high");
+  }
+}
+
+function muteMusic() {
+  if (backgroundAudio.muted == false) {
+    backgroundAudio.muted = true;
+  } else {
+    backgroundAudio.muted = false;
   }
 }
 
