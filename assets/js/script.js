@@ -300,6 +300,8 @@ function startTimerLine(time) {
   timeLine.style.background = "#00a63d";
 }
 
+// If statement toggles the sound between muted and unmuted. Icon is toggled
+// along with sounds.
 function muteSound() {
   if (correctAudio.muted == false) {
     correctAudio.muted = true;
@@ -314,6 +316,7 @@ function muteSound() {
   }
 }
 
+// If statement toggles the background music between muted and unmuted.
 function muteMusic() {
   if (backgroundAudio.muted == false) {
     backgroundAudio.muted = true;
