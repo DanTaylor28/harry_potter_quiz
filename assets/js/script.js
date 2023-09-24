@@ -17,8 +17,8 @@ const timeCount = document.querySelector(".timer-sec");
 const timeLine = document.querySelector(".time-line");
 const soundIcon = document.getElementById("sound-icon");
 
-const correctAudio = new Audio("correct.mp3");
-const incorrectAudio = new Audio("incorrect.mp3");
+const correctAudio = new Audio("assets/audio/correct.mp3");
+const incorrectAudio = new Audio("assets/audio/incorrect.mp3");
 
 // EventListener to check for when hamburger icon is clicked & call
 // mobileMenu function
@@ -163,8 +163,10 @@ function optionClicked(answer) {
     answer.classList.add("correct");
     userScore += 1;
     headerScore();
+    correctAudio.play();
   } else {
     answer.classList.add("incorrect");
+    incorrectAudio.play();
 
     // Below code executes if incorrect answer given. Loops over all options
     // and sets correct class to correct answer to highlight in green for
