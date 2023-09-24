@@ -469,6 +469,8 @@ main.active {
 
 .result-box h2 {
   font-size: 52px;
+  text-align: center;
+  margin: 0 10px;
 }
 
 .result-box .score-container {

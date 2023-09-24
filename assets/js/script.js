@@ -15,6 +15,8 @@ const homeBtn = document.querySelector(".home-btn");
 const timeText = document.querySelector(".timer-text");
 const timeCount = document.querySelector(".timer-sec");
 const timeLine = document.querySelector(".time-line");
+const resultText = document.querySelector(".result-text");
+
 const soundIcon = document.getElementById("sound-icon");
 const musicIcon = document.getElementById("music-icon");
 const backgroundAudio = document.getElementById("background-audio");
@@ -213,6 +215,14 @@ function displayResultBox() {
   // Updates score-text with users total score.
   const scoreText = document.querySelector(".score-text");
   scoreText.textContent = `You Scored ${userScore} out of ${questions.length}`;
+
+  if (userScore == questions.length) {
+    resultText.textContent = "Perfect Score!";
+  } else if (userScore < 3) {
+    resultText.textContent = "You Can Do Better Than That!";
+  } else {
+    resultText.textContent = "Good Effort!";
+  }
 
   const circularValue = document.querySelector(".circular-value");
   const progressValue = document.querySelector(".progress-value");
