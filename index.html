@@ -17,7 +17,7 @@
     <main class="main">
       <header class="header">
         <a href="#">
-            <img src="assets/images/logo.png" alt="hogwarts logo" class="logo">
+          <img src="assets/images/logo.png" alt="hogwarts logo" class="logo" />
         </a>
 
         <nav class="nav-bar">
@@ -68,9 +68,22 @@
               <span class="question-total">
                 <!-- JS inserts HTML -->
               </span>
-              <audio src="assets/audio/correct.mp3" id="correct-audio" muted></audio>
-              <audio src="assets/audio/incorrect.mp3" id="incorrect-audio" muted></audio>
-              <audio src="assets/audio/theme.mp3" id="background-audio" loop muted></audio>
+              <audio
+                src="assets/audio/correct.mp3"
+                id="correct-audio"
+                muted
+              ></audio>
+              <audio
+                src="assets/audio/incorrect.mp3"
+                id="incorrect-audio"
+                muted
+              ></audio>
+              <audio
+                src="assets/audio/theme.mp3"
+                id="background-audio"
+                loop
+                muted
+              ></audio>
               <button onclick="muteMusic()" class="music-btn">
                 <i class="fa-solid fa-music" id="music-icon"></i>
               </button>
@@ -83,7 +96,7 @@
 
           <div class="result-box">
             <h2 class="result-text">
-                <!-- JS inserts HTML -->
+              <!-- JS inserts HTML -->
             </h2>
             <div class="score-container">
               <div class="circular-value">
@@ -105,7 +118,7 @@
             <h1>Harry Potter Quiz</h1>
             <p>
               Test your knowledge on the wizarding world of Harry Potter series
-              and see if can get the top score. Best of luck!
+              and see if you can get the top score. Best of luck!
             </p>
             <button class="enter-btn">Enter</button>
           </div>
@@ -115,18 +128,36 @@
 
     <div class="home-popup">
       <h2>Game Info</h2>
-      <span class="info">
-        * Test game instructions Lorem ipsum dolor sit amet consectetur,
-        adipisicing
-      </span>
-      <span class="info">
-        * Test game instructions Lorem ipsum dolor sit amet consectetur,
-        adipisicing
-      </span>
-      <span class="info">
-        * Test game instructions Lorem ipsum dolor sit amet consectetur,
-        adipisicing
-      </span>
+      <ul>
+        <li>
+          <span class="info">
+            You have 20 questions to answer and 15 seconds to select an option
+            for each.
+          </span>
+        </li>
+        <li>
+          <span class="info">
+            You have to select an option before going to the next question.
+          </span>
+        </li>
+        <li>
+          <span class="info">
+            Your answer will be highlighted in green if correct and red if
+            incorrect, along with the correct answer alongside this in green.
+          </span>
+        </li>
+        <li>
+          <span class="info">
+            Upon completing all questions, your final score will be displayed.
+          </span>
+        </li>
+        <li>
+          <span class="info">
+            This game implements sounds and music which can be toggled on &
+            off using the controls on the following page.
+          </span>
+        </li>
+      </ul>
       <div class="popup-btn-group">
         <button class="info-btn exit-btn">Exit</button>
         <a href="#" class="info-btn continue-btn">Continue</a>

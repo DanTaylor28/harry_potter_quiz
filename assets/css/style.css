@@ -206,12 +206,16 @@ main.active {
   padding: 10px 0 15px;
 }
 
+.home-popup li {
+    color: #740001;
+}
+
 .home-popup .info {
   font-size: 16px;
   display: inline-block;
   color: #000;
   font-weight: 500;
-  margin: 7px 0;
+  margin: 10px 0 10px 10px
 }
 
 .home-popup .popup-btn-group {
