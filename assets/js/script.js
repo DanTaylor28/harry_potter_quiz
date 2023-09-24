@@ -127,6 +127,7 @@ homeBtn.onclick = () => {
 
   displayQuestions(questionCount);
   questionCounter(questionNumb);
+  backgroundAudio.pause();
 };
 
 // Retrieves the questions & options from the array.
