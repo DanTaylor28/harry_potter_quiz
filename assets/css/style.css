@@ -323,7 +323,7 @@ main.active {
   padding: 20px 0;
 }
 
-.quiz-header span {
+.quiz-header div, span {
   font-size: 18px;
   font-weight: 500;
 }
@@ -658,7 +658,7 @@ main.active {
     padding: none;
   }
 
-  .quiz-header span {
+  .quiz-header div, span {
     font-size: 16px;
   }
 
