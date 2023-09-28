@@ -116,3 +116,35 @@ Extensive manual testing has been carried out throughout development by myself a
 ### Lighthouse Results
 
 - Lighthouse screenshots here
+
+## Bugs 
+
+### Unfixed Bugs
+
+- Incorrect sound does not play when the timer runs out unless you mute and then unmute the sound button when the page first loads. I am going to attempt to fix this bug by having the sounds be muted by default as per the background music.
+
+- There are some css display issues when viewing the site in mobile view on Google Chrome.
+
+### Fixed Bugs
+
+## Credits
+
+### Content 
+
+- Ricotta.team was used for some of the quiz questions.
+https://www.ricotta.team/blog/harry-potter-trivia
+
+### Media 
+
+- Codepen for the color scheme used on the site.
+https://codepen.io/Jill-Lambert/pen/bwevpB
+
+- Pixabay was used for the correct and incorrect sounds.
+https://pixabay.com/sound-effects/
+
+- FreePngLogos for the website logo used in the navigation menu.
+https://www.freepnglogos.com/images/hogwarts-7917.html
+
+- Icons8 for the favicon.
+https://icons8.com/icons/set/harry-potter-favicon
+
