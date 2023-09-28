@@ -20,7 +20,6 @@ const soundBtn = document.querySelector(".sound-btn");
 const musicBtn = document.querySelector(".music-btn");
 
 const soundIcon = document.getElementById("sound-icon");
-const musicIcon = document.getElementById("music-icon");
 const backgroundAudio = document.getElementById("background-audio");
 
 const correctAudio = new Audio("assets/audio/correct.mp3");
@@ -81,6 +80,8 @@ let questionNumb = 1;
 let userScore = 0;
 let timeValue = 15;
 let widthValue = 0;
+let counter;
+let counterLine;
 
 // Increments question count & displays next question in array as long as
 // there is one, if not display result box.
