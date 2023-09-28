@@ -109,8 +109,6 @@ Extensive manual testing has been carried out throughout development by myself a
 
 - All CSS passes through the CSS Jigsaw Validator with no errors.
 
-- JSHint screenshot here
-
 - All Javascript passes through the JSHint Validator with no errors.
 
 ### Lighthouse Results

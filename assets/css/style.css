@@ -324,7 +324,8 @@ main.active {
   padding: 20px 0;
 }
 
-.quiz-header div, span {
+.quiz-header div,
+span {
   font-size: 18px;
   font-weight: 500;
 }
@@ -649,6 +650,14 @@ main.active {
 /* Media Queries For screen sizes below 440px */
 
 @media only screen and (max-width: 440px) {
+  .home {
+    margin-top: 126px;
+  }
+
+  .home-content h1 {
+    font-size: 68px;
+}
+
   .quiz-section .quiz-box {
     max-width: 388px;
     min-width: 388px;
@@ -659,7 +668,8 @@ main.active {
     font-size: 22px;
   }
 
-  .quiz-header div, span {
+  .quiz-header div,
+  span {
     font-size: 16px;
   }
 
@@ -699,4 +709,16 @@ main.active {
     padding: 8px;
     font-size: 16px;
   }
+}
+
+@media only screen and (max-width: 390px) {
+    .home-content h1 {
+        font-size: 56px;
+    }
+
+    .home-content .enter-btn {
+        width: 120px;
+        height: 45px;
+        font-size: 16px;
+    }
 }
