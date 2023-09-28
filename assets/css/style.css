@@ -27,6 +27,7 @@ body {
   color: #fff;
   background: #0e0615;
   overflow: hidden;
+  position: relative;
 }
 
 html {
@@ -650,6 +651,7 @@ main.active {
 @media only screen and (max-width: 440px) {
   .quiz-section .quiz-box {
     max-width: 388px;
+    min-width: 388px;
     padding: 0 30px;
   }
 
