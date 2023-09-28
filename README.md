@@ -72,3 +72,47 @@ Intro text here, brief overview of project with project aims and my target audie
 ### Different Question Types
 
 - As well as just multiple choice questions, I would like to include ones where the user must input an answer manually and/or for there to be the ability to select more than one correct answer.
+
+## Deployment
+
+### Local Deployment
+
+### Live Deployment
+
+## Testing
+
+### Manual Testing
+
+Extensive manual testing has been carried out throughout development by myself and also family and friends to document any bugs present in my code. Below are the manual tests that have been carried out:
+
+- Tested and confirmed that the site works as expected on the following browsers: Chrome, Safari & Firefox.
+
+- All code has been put through the appropriate validators.
+
+- The site is responsive and works well on various different screen sizes. This has been tested in the development devices tool bar and on a number of different mobiles and tablets.
+
+- Myself and others have played through the quiz dozens of times to ensure the score, timer, timeline and results page are all working and displaying the correct output.
+
+- Console logging was used extensively throughout the development to ensure the code was functioning as expected and to also make any debugging easier.
+
+- All links are working and open in a new tab when clicked.
+
+- The sounds and background music work as expected and the audio buttons mute and unmute the audio successfully.
+
+### Validator Testing
+
+- HTML validator screenshot here
+
+- All HTML passes through the HTML W3C Validator with no errors.
+
+- CSS validator screenshot here
+
+- All CSS passes through the CSS Jigsaw Validator with no errors.
+
+- JSHint screenshot here
+
+- All Javascript passes through the JSHint Validator with no errors.
+
+### Lighthouse Results
+
+- Lighthouse screenshots here
