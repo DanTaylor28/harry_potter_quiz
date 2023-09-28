@@ -58,3 +58,17 @@ Intro text here, brief overview of project with project aims and my target audie
 - Circular progress bar. Shows users final score in a percentage which automatically fills up in the progress bar to match the percentage number displayed in the centre of this component.
 - Also displays how many questions you answered correctly out of the total beneath the progress bar
 - Try again and Back to home buttons redirect user to either play again or return to the home screen.
+
+## Additional Features To Implement
+
+### Choose A Difficulty
+
+- I would like to include the ability for the user to choose from easy, medium and hard difficulties, along with a different set of quiz questions for each.
+
+### Leaderboard
+
+- The ability for a user to input their name and to have their quiz score saved on a leaderboard would be another feature that I would like to implement. This would be a good feature to allow users to compare their results with friends or even strangers.
+
+### Different Question Types
+
+- As well as just multiple choice questions, I would like to include ones where the user must input an answer manually and/or for there to be the ability to select more than one correct answer.

@@ -339,7 +339,7 @@ function muteMusic() {
 const mediaQuery = window.matchMedia("(max-width: 440px)");
 if (mediaQuery.matches) {
   function startTimerLine(time) {
-    counterLine = setInterval(timer, 49);
+    counterLine = setInterval(timer, 48);
     function timer() {
       time += 1;
       timeLine.style.width = time + "px";
