@@ -721,4 +721,12 @@ span {
         height: 45px;
         font-size: 16px;
     }
+
+    .quiz-section {
+        opacity: 0;
+    }
+
+    .quiz-section.active {
+        opacity: 1;
+    }
 }
