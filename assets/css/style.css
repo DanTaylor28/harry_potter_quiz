@@ -713,13 +713,21 @@ span {
 
 @media only screen and (max-width: 390px) {
     .home-content h1 {
-        font-size: 56px;
+        font-size: 36px;
+    }
+
+    .home-content p {
+        font-size: 12px;
     }
 
     .home-content .enter-btn {
         width: 120px;
         height: 45px;
         font-size: 16px;
+    }
+
+    .home {
+        left: -55%;
     }
 
     .quiz-section {
