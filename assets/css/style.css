@@ -728,6 +728,7 @@ span {
 
     .home {
         left: -55%;
+        padding: 0;
     }
 
     .quiz-section {
