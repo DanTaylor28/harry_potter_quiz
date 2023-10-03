@@ -650,9 +650,9 @@ span {
 /* Media Queries For screen sizes below 440px */
 
 @media only screen and (max-width: 440px) {
-  .home {
+  /* .home {
     margin-top: 126px;
-  }
+  } */
 
   .home-content h1 {
     font-size: 68px;
@@ -711,7 +711,7 @@ span {
   }
 }
 
-@media only screen and (max-width: 390px) {
+@media only screen and (max-width: 380px) {
     .home-content h1 {
         font-size: 36px;
     }
@@ -727,7 +727,7 @@ span {
     }
 
     .home {
-        left: -55%;
+        left: -50%;
         padding: 0;
     }
 
