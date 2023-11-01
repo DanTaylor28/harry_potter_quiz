@@ -2,7 +2,7 @@
 
 - AmIResponsive image here
 
-Intro text here, brief overview of project with project aims and my target audience.
+This project is a Harry Potter quiz made entirely with HTML, CSS and vanilla JavaScript. The quiz contains 20 questions and has full user interactivity including sounds, background music and a score tracking system. The aim of this project is for users to be able to test their knowledge and learn more about the Harry Potter universe. My target audience are people who enjoy the Harry Potter series as well as anybody who just likes to complete quizzes. This quiz is suitable for both adults and children. 
 
 ## Current Features
 
