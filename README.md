@@ -8,22 +8,19 @@ This project is a Harry Potter quiz made entirely with HTML, CSS and vanilla Jav
 
 ### Header/Navbar
 
-- 3 links
-- Site logo
-- Custom hamburger menu in mobile view
+- Navbar contains the site logo along with links to the home, about and contact pages.
+- The navbar transforms into a custom hamburger menu when visiting the site from a mobile device.
 
 ### Home Screen
 
-- Call to action Enter button
-- Attention grabbing, Harry Potter themed background
-- Intro text/Brief overview of what to expect from this website
+- The home screen contains a large title along with a brief overview and Harry Potter themed background, to make it immediately obvious to visitors what they can expect to find throughout the website.
+- There is a large call to action button in an attempt to encourage site visitors to navigate through to the quiz and try it out for themselves.
 
 ### Home Popup
 
-- Game info
-- Important information to know
-- Game instructions
-- Background is blurred out as not to take attention away from the popup
+- Upon clicking the enter cta button, a popup appears providing important game information and instructions.
+- From this popup, you can either continue through to immediately start the quiz or exit out back to the home screen.
+- I added blur to the background of the popup, to ensure the user is not distracted by the background and to also improve the user interface.
 
 ### Quiz Section
 
