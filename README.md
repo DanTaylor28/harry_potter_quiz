@@ -98,7 +98,7 @@ Extensive manual testing has been carried out throughout development by myself a
 
 ### Validator Testing
 
-- HTML validator screenshot here
+![html-validator](assets/images/html_validator.png)
 
 - All HTML passes through the HTML W3C Validator with no errors.
 
