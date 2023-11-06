@@ -102,7 +102,13 @@ Extensive manual testing has been carried out throughout development by myself a
 
 - All HTML passes through the HTML W3C Validator with no errors.
 
-- CSS validator screenshot here
+<p>
+    <a href="http://jigsaw.w3.org/css-validator/check/referer">
+        <img style="border:0;width:88px;height:31px"
+            src="http://jigsaw.w3.org/css-validator/images/vcss"
+            alt="Valid CSS!" />
+    </a>
+</p>
 
 - All CSS passes through the CSS Jigsaw Validator with no errors.
 
