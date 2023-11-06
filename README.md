@@ -6,6 +6,8 @@ This project is a Harry Potter quiz made entirely with HTML, CSS and vanilla Jav
 
 ## Current Features
 
+![landing-page](assets/images/landing_page.png)
+
 ### Header/Navbar
 
 - Navbar contains the site logo along with links to the home, about and contact pages.
@@ -16,11 +18,15 @@ This project is a Harry Potter quiz made entirely with HTML, CSS and vanilla Jav
 - The home screen contains a large title along with a brief overview and Harry Potter themed background, to make it immediately obvious to visitors what they can expect to find throughout the website.
 - There is a large call to action button in an attempt to encourage site visitors to navigate through to the quiz and try it out for themselves.
 
+![home-popup](assets/images/home_popup.png)
+
 ### Home Popup
 
 - Upon clicking the enter cta button, a popup appears providing important game information and instructions.
 - From this popup, you can either continue through to immediately start the quiz or exit out back to the home screen.
 - I added blur to the background of the popup, to ensure the user is not distracted by the background and to also improve the user interface.
+
+![quiz-section](assets/images/quiz_section.png)
 
 ### Quiz Section
 
@@ -48,6 +54,8 @@ This project is a Harry Potter quiz made entirely with HTML, CSS and vanilla Jav
 - When option is selected, the timeline stops moving and resets after every question.
 - When 3 seconds left on timer(timeline is so many px away from full length of quiz box) the color changes from green to red to indicate to user that theres very little time left and to present an imminent warning of them running out of time.
 - Depending on what screen size the user is playing on, affects how fast the timeline progresses. The smaller the screen, the faster I had to make the timeline move.
+
+![result-section](assets/images/result_section.png)
 
 ### Result Section
 
