@@ -84,6 +84,14 @@ This project is a Harry Potter quiz made entirely with HTML, CSS and vanilla Jav
 
 ### Live Deployment
 
+The points below outline the neceassary steps taken to deploy this project live through Github Pages.
+
+- Navigate to your repository on Github.
+- Select the settings tab and then select Pages from the dropdown on the left hand side.
+- On this page you can enable Github Pages and select the branch you want to deploy from and click save.
+- From here, you will be notifed that your project is live along with a link to the live web page.
+- Any future changes to your code will now show on the live site also, since it is redeployed with each new commit.
+
 ## Testing
 
 ### Manual Testing
