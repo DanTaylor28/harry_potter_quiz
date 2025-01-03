@@ -144,6 +144,8 @@ Extensive manual testing has been carried out throughout development by myself a
 
 ### Fixed Bugs
 
+- The question line timer was not syncing up correctly with the corresponding screen size the site was displayed on. Add multiple media queries eventually solved this issue.
+
 ## Credits
 
 ### Content 
