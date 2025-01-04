@@ -78,6 +78,10 @@ This project is a Harry Potter quiz made entirely with HTML, CSS and vanilla Jav
 
 - As well as just multiple choice questions, I would like to include ones where the user must input an answer manually and/or for there to be the ability to select more than one correct answer.
 
+### About & Contact Links
+
+- Add in the relevant content when a user navigates to the about section, and a contact form in the contact link.
+
 ## Deployment
 
 ### Local Deployment
